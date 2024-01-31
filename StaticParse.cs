@@ -1,5 +1,3 @@
-using SunamoValues;
-
 namespace SunamoParsing;
 
 public static class StaticParse
@@ -8,7 +6,7 @@ public static class StaticParse
     public static string GetString(List<string> o, int p)
     {
         string vr = o[p];
-        return vr.TrimEnd(AllCharsSE.space);
+        return vr.TrimEnd(' ');
     }
 
     public static int GetInt(List<string> o, int p)
@@ -57,16 +55,14 @@ public static class StaticParse
 
     public static string GetBoolS(List<string> o, int p)
     {
-        return BTS.BoolToStringEn(GetBool(o, p));
+        return GetBool(o, p) ? "Yes" : "No";
     }
 
     public static DateTime GetDateTime(List<string> o, int p)
     {
         string dd = o[p];
-        return DTHelperCs.ParseDateCzech(dd);
+        return DateTime.Parse(dd, CultureInfo.GetCultureInfo("cs")); //DTHelperCs.ParseDateCzech(dd);
     }
-
-
 
     public static string GetDateTimeS(List<string> o, int p)
     {
