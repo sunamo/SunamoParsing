@@ -1,6 +1,8 @@
+namespace SunamoParsing._sunamo;
+
 //namespace SunamoParsing._sunamo;
 
-//public class SH
+//internal class SH
 //{
-//    //public static Func<string, string, List<string>> Split;
+//    //internal static Func<string, string, List<string>> Split;
 //}

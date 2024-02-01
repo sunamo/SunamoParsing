@@ -17,7 +17,7 @@ public static class StaticParse
         2-2147483546 Let It Die Live At The Palace -32727
         0-2147483546 Let It Die Live At The Palace -32727
         */
-        //CL.WriteLine(SHJoin.JoinSpace( CA.ToListString( o)));
+        //CL.WriteLine(string.Join(AllStrings.space,  new List<string>( o)));
         //CL.WriteLine(p);
 
         return int.Parse(o[p]);

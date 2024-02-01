@@ -1,6 +1,8 @@
+namespace SunamoParsing._sunamo;
+
 //namespace SunamoParsing._sunamo;
 
-//public class DTHelperCs
+//internal class DTHelperCs
 //{
-//    public static Func<string, DateTime> ParseDateCzech;
+//    internal static Func<string, DateTime> ParseDateCzech;
 //}
