@@ -1,4 +1,4 @@
-namespace SunamoParsing._sunamo;
+namespace SunamoParsing;
 
 internal class DTHelper
 {

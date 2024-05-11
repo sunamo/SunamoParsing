@@ -1,4 +1,4 @@
-namespace SunamoParsing._sunamo;
+namespace SunamoParsing;
 
 //namespace SunamoParsing._sunamo;
 
