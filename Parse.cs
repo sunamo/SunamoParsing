@@ -1,4 +1,10 @@
-namespace SunamoParsing;
+namespace
+#if SunamoCollections
+SunamoCollections
+#else
+SunamoParsing
+#endif
+;
 
 public class Parse
 {
