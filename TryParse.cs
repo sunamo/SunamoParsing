@@ -1,4 +1,10 @@
-namespace SunamoParsing;
+namespace
+#if SunamoDateTime
+SunamoDateTime
+#else
+SunamoParsing
+#endif
+;
 
 public class TryParse
 {
