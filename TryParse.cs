@@ -1,26 +1,24 @@
 namespace
 #if SunamoDateTime
 SunamoDateTime
+#elif SunamoGoogleSheets
+SunamoGoogleSheets
+#elif SunamoString
+SunamoString
 #else
 SunamoParsing
 #endif
 ;
-
 public class TryParse
 {
     public class DateTime
     {
         // was moved to E:\vs\Projects\sunamoWithoutLocalDep\SunamoDateTime\DT\DTHelperMulti.cs
-
-
     }
-
     public class Integer
     {
         public static Integer Instance = new Integer();
-
         public int lastInt = -1;
-
         /// <summary>
         /// Vrátí True pokud se podaří vyparsovat, jinak false.
         /// Výsledek najdeš v proměnné lastInt

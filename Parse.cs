@@ -1,11 +1,14 @@
 namespace
 #if SunamoCollections
 SunamoCollections
+#elif SunamoGoogleSheets
+SunamoGoogleSheets
+#elif SunamoString
+SunamoString
 #else
 SunamoParsing
 #endif
 ;
-
 public class Parse
 {
     public class Byte
@@ -20,7 +23,6 @@ public class Parse
             return 0;
         }
     }
-
     public class Double
     {
         /// <summary>
@@ -37,11 +39,8 @@ public class Parse
             return 0;
         }
     }
-
     public class Integer
     {
-
-
         /// <summary>
         /// Vrátí -1 v případě že se nepodaří vyparsovat
         /// </summary>
@@ -55,7 +54,6 @@ public class Parse
             }
             return -1;
         }
-
         /// <summary>
         /// Vrátí int.MaxValue v případě že se nepodaří vyparsovat
         /// </summary>
@@ -69,7 +67,6 @@ public class Parse
             return int.MaxValue;
         }
     }
-
     public class Short
     {
         /// <summary>
