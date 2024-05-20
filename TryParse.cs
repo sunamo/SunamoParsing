@@ -5,6 +5,8 @@ SunamoDateTime
 SunamoGoogleSheets
 #elif SunamoString
 SunamoString
+#elif SunamoCollections
+SunamoCollections
 #else
 SunamoParsing
 #endif
