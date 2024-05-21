@@ -76,7 +76,8 @@ public static class StaticParse
             return null;
         else
         {
-            throw new NotImplementedException();
+            ThrowEx.NotImplementedMethod();
+            return null;
 
             //BinaryFormatter bf = new BinaryFormatter();
             //using (MemoryStream ms = new MemoryStream())
