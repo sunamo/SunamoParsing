@@ -1,4 +1,4 @@
 namespace SunamoParsing;
-internal class NH
+public class NH
 {
 }
