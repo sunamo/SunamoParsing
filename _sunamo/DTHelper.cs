@@ -1,8 +1,8 @@
 namespace SunamoParsing;
 
-public class DTHelper
+internal class DTHelper
 {
-    public static Func<string, DateTime> IsValidTimeText;
-    public static Func<string, DateTime> IsValidDateTimeText;
-    public static Func<string, DateTime> IsValidDateText;
+    internal static Func<string, DateTime> IsValidTimeText;
+    internal static Func<string, DateTime> IsValidDateTimeText;
+    internal static Func<string, DateTime> IsValidDateText;
 }
