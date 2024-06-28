@@ -1,3 +1,5 @@
+
+namespace SunamoParsing;
 public class TranslateAble
 {
     

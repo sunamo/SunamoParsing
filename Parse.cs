@@ -1,3 +1,5 @@
+
+namespace SunamoParsing;
 public class Parse
 {
     public class Byte
