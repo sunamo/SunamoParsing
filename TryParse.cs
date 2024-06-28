@@ -1,16 +1,3 @@
-namespace
-#if SunamoDateTime
-SunamoDateTime
-#elif SunamoGoogleSheets
-SunamoGoogleSheets
-#elif SunamoString
-SunamoString
-#elif SunamoCollections
-SunamoCollections
-#else
-SunamoParsing
-#endif
-;
 public class TryParse
 {
     public class DateTime

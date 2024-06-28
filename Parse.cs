@@ -1,14 +1,3 @@
-namespace
-#if SunamoCollections
-SunamoCollections
-#elif SunamoGoogleSheets
-SunamoGoogleSheets
-#elif SunamoString
-SunamoString
-#else
-SunamoParsing
-#endif
-;
 public class Parse
 {
     public class Byte
