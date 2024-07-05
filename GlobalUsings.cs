@@ -16,3 +16,6 @@ global using SunamoParsing._sunamo.SunamoXlfKeys;
 global using SunamoParsing._sunamo.SunamoDateTime.DT;
 global using SunamoParsing._sunamo.SunamoExceptions.OnlyInSE;
 global using SunamoParsing._sunamo.SunamoExceptions._AddedToAllCsproj;
+global using System.Diagnostics;
+global using System.Net;
+global using System.Threading.Tasks;

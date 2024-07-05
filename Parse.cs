@@ -1,4 +1,3 @@
-
 namespace SunamoParsing;
 public class Parse
 {
