@@ -1,4 +1,4 @@
-namespace SunamoParsing;
+namespace SunamoParsing._sunamo.SunamoDateTime.DT;
 
 internal class DTHelper
 {

@@ -6,6 +6,13 @@ global using System.Text;
 global using System.Collections.Generic;
 global using System.Collections;
 global using System.IO;
-
 global using System.Diagnostics.CodeAnalysis;
 global using System.Reflection;
+global using SunamoParsing;
+global using SunamoParsing._sunamo.SunamoNumbers;
+global using SunamoParsing._sunamo.SunamoStringGetLines;
+global using SunamoParsing._sunamo.SunamoValues;
+global using SunamoParsing._sunamo.SunamoXlfKeys;
+global using SunamoParsing._sunamo.SunamoDateTime.DT;
+global using SunamoParsing._sunamo.SunamoExceptions.OnlyInSE;
+global using SunamoParsing._sunamo.SunamoExceptions._AddedToAllCsproj;
