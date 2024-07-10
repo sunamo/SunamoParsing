@@ -3,7 +3,7 @@ public class TryParse
 {
     public class DateTime
     {
-        // was moved to E:\vs\Projects\sunamoWithoutLocalDep\SunamoDateTime\DT\DTHelperMulti.cs
+        // was moved to E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\DT\DTHelperMulti.cs
     }
     public class Integer
     {
