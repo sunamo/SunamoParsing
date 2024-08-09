@@ -10,11 +10,8 @@ public class ParserTwoValues
     public static List<double> ParseDouble(string delimiter, string s)
     {
         var parsed = ParseString(delimiter, s);
-        List<double> result = new List<double>(parsed.Count);
-        foreach (var item in parsed)
-        {
-            result.Add(double.Parse(item));
-        }
+        var result = new List<double>(parsed.Count);
+        foreach (var item in parsed) result.Add(double.Parse(item));
         return result;
 
         //return CAToNumber.ToNumber<double, string>(double.Parse, );

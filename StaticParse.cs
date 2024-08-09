@@ -2,10 +2,9 @@ namespace SunamoParsing;
 
 public static class StaticParse
 {
-
     public static string GetString(List<string> o, int p)
     {
-        string vr = o[p];
+        var vr = o[p];
         return vr.TrimEnd(' ');
     }
 
@@ -34,7 +33,7 @@ public static class StaticParse
     }
 
     /// <summary>
-    /// POužívá metodu bool.Parse
+    ///     POužívá metodu bool.Parse
     /// </summary>
     /// <param name="o"></param>
     /// <param name="p"></param>
@@ -44,7 +43,7 @@ public static class StaticParse
     }
 
     /// <summary>
-    /// Používá metodu Convert.ToBoolean
+    ///     Používá metodu Convert.ToBoolean
     /// </summary>
     /// <param name="o"></param>
     /// <param name="p"></param>
@@ -60,7 +59,7 @@ public static class StaticParse
 
     public static DateTime GetDateTime(List<string> o, int p)
     {
-        string dd = o[p];
+        var dd = o[p];
         return DateTime.Parse(dd, CultureInfo.GetCultureInfo("cs")); //DTHelperCs.ParseDateCzech(dd);
     }
 
@@ -72,28 +71,28 @@ public static class StaticParse
     public static byte[] GetImage(List<string> o, int dex)
     {
         object obj = o[dex];
-        if (obj == System.DBNull.Value)
-            return null;
-        else
+        if (obj == DBNull.Value)
         {
-            ThrowEx.NotImplementedMethod();
             return null;
-
-            //BinaryFormatter bf = new BinaryFormatter();
-            //using (MemoryStream ms = new MemoryStream())
-            //{
-            //    bf.Serialize(ms, obj); //now in Memory Stream
-            //    ms.ToArray(); // Array object
-            //    ms.Seek(0, SeekOrigin.Begin);
-
-            //    object o2 = bf.Deserialize(ms);
-            //    if (o2.GetType() != typeof(System.DBNull))
-            //    {
-            //        return (byte[])o2;
-            //    }
-            //    return new byte[0];
-            //}
         }
+
+        ThrowEx.NotImplementedMethod();
+        return null;
+
+        //BinaryFormatter bf = new BinaryFormatter();
+        //using (MemoryStream ms = new MemoryStream())
+        //{
+        //    bf.Serialize(ms, obj); //now in Memory Stream
+        //    ms.ToArray(); // Array object
+        //    ms.Seek(0, SeekOrigin.Begin);
+
+        //    object o2 = bf.Deserialize(ms);
+        //    if (o2.GetType() != typeof(System.DBNull))
+        //    {
+        //        return (byte[])o2;
+        //    }
+        //    return new byte[0];
+        //}
     }
 
     public static decimal GetDecimal(List<string> o, int p)
