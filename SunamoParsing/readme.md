@@ -1,20 +1,29 @@
-### SunamoParsing
+# SunamoParsing
 
-Part of PlatformIndependentNuGetPackages:
+A .NET library for parsing lists, basic types, and more complex structures from string data.
 
-- [nuget.org](https://www.nuget.org/profiles/sunamo)
-- [github.org](https://github.com/sunamo/PlatformIndependentNuGetPackages)
+## Features
 
-Another links:
+- **StaticParse** - Static methods for parsing typed values (int, float, double, DateTime, Guid, etc.) from a list of strings by index
+- **ListParser** - Base class for index-based parsing from an internal string list
+- **Parse** - Simple type parsing (byte, double, integer, short) with default fallback values on failure
+- **ParseDefault** - Type parsing with custom default values when parsing fails
+- **ParserTwoValues** - Parsing and formatting of delimiter-separated two-value strings
 
-- [Developer site](https://sunamo.cz)
-
-Request for new features / bug report / etc: [Mail](mailto:radek.jancik@sunamo.cz) or on GitHub
 ## Target Frameworks
 
 **TargetFrameworks:** `net10.0;net9.0;net8.0`
 
-**Reason:** Code uses C# 12.0 features (collection expressions, primary constructors) or dependencies requiring .NET 8.0+:
-- Collection expressions `[]` syntax requires C# 12.0 (net8.0+)
-- Primary constructors require C# 12.0 (net8.0+) 
-- Entity Framework Core 9.x requires net8.0+
+## Installation
+
+```
+dotnet add package SunamoParsing
+```
+
+## Links
+
+- [NuGet](https://www.nuget.org/profiles/sunamo)
+- [GitHub](https://github.com/sunamo/PlatformIndependentNuGetPackages)
+- [Developer site](https://sunamo.cz)
+
+For feature requests or bug reports: [Email](mailto:radek.jancik@sunamo.cz) or on GitHub

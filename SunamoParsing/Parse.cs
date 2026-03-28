@@ -1,65 +1,85 @@
 namespace SunamoParsing;
 
+/// <summary>
+/// Provides nested classes for parsing basic types from strings.
+/// </summary>
 public class Parse
 {
+    /// <summary>
+    /// Provides byte parsing functionality.
+    /// </summary>
     public class Byte
     {
-        public byte ParseByte(string p)
+        /// <summary>
+        /// Parses a byte from a string, returns 0 if parsing fails.
+        /// </summary>
+        /// <param name="text">The string to parse.</param>
+        /// <returns>The parsed byte value, or 0 if parsing fails.</returns>
+        public byte ParseByte(string text)
         {
-            byte b;
-            if (byte.TryParse(p, out b)) return b;
+            if (byte.TryParse(text, out byte result)) return result;
             return 0;
         }
     }
 
+    /// <summary>
+    /// Provides double parsing functionality.
+    /// </summary>
     public class Double
     {
         /// <summary>
-        ///     Vrátí -1 v případě že se nepodaří vyparsovat
+        /// Parses a double from a string, returns 0 if parsing fails.
         /// </summary>
-        /// <param name="p"></param>
-        public double ParseDouble(string p)
+        /// <param name="text">The string to parse.</param>
+        /// <returns>The parsed double value, or 0 if parsing fails.</returns>
+        public double ParseDouble(string text)
         {
-            double p2;
-            if (double.TryParse(p, out p2)) return p2;
+            if (double.TryParse(text, out double result)) return result;
             return 0;
         }
     }
 
+    /// <summary>
+    /// Provides integer parsing functionality.
+    /// </summary>
     public class Integer
     {
         /// <summary>
-        ///     Vrátí -1 v případě že se nepodaří vyparsovat
+        /// Parses an integer from a string, returns -1 if parsing fails.
         /// </summary>
-        /// <param name="p"></param>
-        public int ParseInt(string p)
+        /// <param name="text">The string to parse.</param>
+        /// <returns>The parsed integer value, or -1 if parsing fails.</returns>
+        public int ParseInt(string text)
         {
-            int p2;
-            if (int.TryParse(p, out p2)) return p2;
+            if (int.TryParse(text, out int result)) return result;
             return -1;
         }
 
         /// <summary>
-        ///     Vrátí int.MaxValue v případě že se nepodaří vyparsovat
+        /// Parses an integer from a string, returns int.MaxValue if parsing fails.
         /// </summary>
-        public int ParseIntMaxValue(string p)
+        /// <param name="text">The string to parse.</param>
+        /// <returns>The parsed integer value, or int.MaxValue if parsing fails.</returns>
+        public int ParseIntMaxValue(string text)
         {
-            int p2;
-            if (int.TryParse(p, out p2)) return p2;
+            if (int.TryParse(text, out int result)) return result;
             return int.MaxValue;
         }
     }
 
+    /// <summary>
+    /// Provides short parsing functionality.
+    /// </summary>
     public class Short
     {
         /// <summary>
-        ///     Vrátí -1 pokud se nepodaří vyparsovat
+        /// Parses a short from a string, returns -1 if parsing fails.
         /// </summary>
-        /// <param name="d"></param>
-        public short ParseShort(string d)
+        /// <param name="text">The string to parse.</param>
+        /// <returns>The parsed short value, or -1 if parsing fails.</returns>
+        public short ParseShort(string text)
         {
-            short s = 0;
-            if (short.TryParse(d, out s)) return s;
+            if (short.TryParse(text, out short result)) return result;
             return -1;
         }
     }
