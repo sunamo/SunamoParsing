@@ -31,7 +31,7 @@ internal partial class ThrowEx
     /// <returns>The full name string in format "Namespace.Type.Method".</returns>
     static string FullNameOfExecutedCode(object type, string methodName, bool isFromThrowEx = false)
     {
-        if (methodName == null)
+        if (methodName is null)
         {
             int depth = 2;
             if (isFromThrowEx)
@@ -71,7 +71,7 @@ internal partial class ThrowEx
     /// <returns>True if the exception message was not null.</returns>
     internal static bool ThrowIsNotNull(string? exception, bool isReallyThrowing = true)
     {
-        if (exception != null)
+        if (exception is not null)
         {
             Debugger.Break();
             if (isReallyThrowing)
