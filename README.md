@@ -1,5 +1,10 @@
 # SunamoParsing
 
+## Short description
+
+Knihovna pro parsování seznamů, základních typů a složitějších struktur z textu. Obsahuje Runner a testy.
+
+
 Parsing list, basic types or more complex structures
 
 ## Overview
